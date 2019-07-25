@@ -1,4 +1,9 @@
 $('.menu').on('click', function() {
-    debugger;
     $(this).toggleClass('active');
+    $('.overlay').toggleClass('menu-open');
+})
+
+$('.nav a').on('click', function() {
+    $('.menu').removeClass('active');
+    $('.overlay').removeClass('menu-open');
 })
